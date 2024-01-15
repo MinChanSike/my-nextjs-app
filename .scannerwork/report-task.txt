@@ -3,5 +3,5 @@ projectKey=minchansike_my-nextjs-app
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.51948
 dashboardUrl=https://sonarcloud.io/dashboard?id=minchansike_my-nextjs-app
-ceTaskId=AY0L3JVYgF_Pj4xUoBXv
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AY0L3JVYgF_Pj4xUoBXv
+ceTaskId=AY0MXyEraFitCcXUKlKu
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AY0MXyEraFitCcXUKlKu
