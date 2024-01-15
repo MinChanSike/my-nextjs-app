@@ -1,0 +1,6 @@
+{
+  "sonarlint.connectedMode.project": {
+    "connectionId": "MY_NEXTJS_APP",
+    "projectKey": "minchansike_my-nextjs-app"
+  }
+}
