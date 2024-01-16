@@ -9,8 +9,10 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prepare": "husky install",
-    "sonarAnalyze:win": "sonar-scanner.bat -D\"sonar.organization=minchansike\" -D\"sonar.projectKey=minchansike_my-nextjs-app\" -D\"sonar.sources=.\"  -D\"sonar.host.url=https://sonarcloud.io\"",
-    "sonarAnalyze:linux": "sonar-scanner -Dsonar.organization=minchansike -Dsonar.projectKey=minchansike_my-nextjs-app -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io"
+    "sonarKey:win": "echo %SONAR_TOKEN_NEXTJS%",
+    "sonarKey:linux": "cross-env env | grep SONAR_TOKEN_PUMAPREY",
+    "sonarAnalyzer:win": "sonar-scanner.bat -D\"sonar.organization=minchansike\" -D\"sonar.projectKey=minchansike_my-nextjs-app\" -D\"sonar.sources=.\" -D\"sonar.host.url=https://sonarcloud.io\" -D\"sonar.token=%SONAR_TOKEN_NEXTJS%\"",
+    "sonarAnalyzer:linux": "sonar-scanner -Dsonar.organization=minchansike -Dsonar.projectKey=minchansike_my-nextjs-app -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -31,6 +33,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "cross-env": "^7.0.3",
     "eslint": "^8",
     "eslint-config-next": "^14.0.4",
     "eslint-config-prettier": "^9.1.0",
